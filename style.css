@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding-top: 70px;
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+  /* Photo from Hans Isaacson on Unsplash*/
+  background-image: url("/assets/background/hans-isaacson-mo-h0CGXDuo-unsplash.jpg");
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: -5px;
+  word-spacing: -2px;
+}
+
+.website-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  font-size: medium;
+  color: #fff;
+}
+
+.welcome-msg {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.search-highlight {
+  background-color: greenyellow; /* ou a cor desejada */
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p {
+  font-size: large;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content h3 {
+    font-size: 16px;
+      }
+
+  .main-content p {
+    font-size: 14px;
+  }
+}
+
+.main-content {
+  flex: 1;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.main-content h3 {
+  font-size: 18px;
+  padding: 20px;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.services-container a {
+  flex: 1 0 300px; 
+}
+
+.services-container figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.services-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.services-container figure:hover img {
+  transform: scale(1.1);
+}
+
+.services-container figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  transition: bottom 0.3s ease;
+}
+
+.services-container figure:hover figcaption {
+  bottom: -50px;
+}
+
+.game-result {
+  color: green;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+
+/*Deepak's Pages*/
+
+.logo{
+  width: 50px;
+  height: auto;
+  top: 20px;
+  left: 20px;
+}
+#mainCourses{
+  margin-top: 30px;
+  width:100%; 
+  max-width: 750px; 
+  height:auto;
+}
+
+footer{
+  background-color:#222;
+  color: white;
+  text-align:center;
+  padding: 20px 0;
+}
+.footcon nav ul{
+  list-style: none;
+  padding: 0;
+}
+.footcon nav ul li{
+  display:inline;
+  margin: 0 10px;
+}
+.footcon nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.footcon nav ul li a:hover{
+  text-decoration:underline;
+}
+
+#formHead{
+  color:crimson;
+  font-weight: bold;
+  font-size: 250%;
+}
+
+.subbutton {
+  background-color: crimson; 
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 75px;
+  border-radius: 7.5px;
+  cursor: pointer;
+}
+.subbutton:hover{
+  background-color: rgb(65, 3, 16); 
+}
+
+form{
+  max-width: 700px;
+  margin: 20px auto;
+}
+input[type="text"], input[type="email"], select, textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+label {
+  font-weight: bold;
+}
+
+
