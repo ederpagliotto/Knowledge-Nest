@@ -46,10 +46,6 @@ p {
 
   .main-content p {
     font-size: 14px;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: block;
   }
 }
 
@@ -63,6 +59,7 @@ p {
   font-size: 18px;
   padding: 20px;
 }
+
 .services-container {
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +101,21 @@ p {
 
 .services-container figure:hover figcaption {
   bottom: -50px;
+}
+
+.why-choose {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.why-choose li {
+  list-style: none;
+  text-align: center;
+}
+
+.why-choose p {
+  font-weight: bold;
 }
 
 .game-result {
