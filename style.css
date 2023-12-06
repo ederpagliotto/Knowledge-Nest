@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   /* Photo from Hans Isaacson on Unsplash*/
-  background-image: url("/assets/background/hans-isaacson-mo-h0CGXDuo-unsplash.jpg");
+  background-image: url("/assets/background/hans-isaacson-mo-h0CGXDuo-unsplash.webp");
 }
 
 .logo {
