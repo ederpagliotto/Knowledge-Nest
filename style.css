@@ -12,13 +12,6 @@ body {
   body {
     font-size: 14px;
   }
-
-.logo {
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none;
-  letter-spacing: -5px;
-  word-spacing: -2px;
 }
 
 .website-title {
@@ -33,7 +26,7 @@ body {
 }
 
 .search-highlight {
-  background-color: greenyellow; /* ou a cor desejada */
+  background-color: greenyellow;
 }
 
 h3 {
@@ -131,7 +124,7 @@ p {
 
 
 
-/*Deepak's Pages*/
+/*Deepak's Code*/
 
 .logo{
   width: 50px;
@@ -144,6 +137,29 @@ p {
   width:100%; 
   max-width: 750px; 
   height:auto;
+}
+
+#courseList{
+  font-family: 'Roboto Condensed';
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#courseList td, #courseList th{
+  border: 2px dashed #ddd;
+  padding: 8px;
+}
+
+#courseList tr:hover{
+  background-color:rgb(236, 204, 211)
+}
+
+#courseList th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align:centre;
+  background-color: #222;
+  color:white;
 }
 
 footer{
@@ -202,5 +218,3 @@ input[type="text"], input[type="email"], select, textarea{
 label {
   font-weight: bold;
 }
-
-
