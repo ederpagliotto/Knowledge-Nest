@@ -37,23 +37,36 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Search button
-searchButton.addEventListener('click', () => {
-  // Getting term and converting to lower case
-  const searchTerm = searchInput.value.toLowerCase();
+document.addEventListener('DOMContentLoaded', () => {
+  const searchButton = document.getElementById('search-button');
+  const searchInput = document.getElementById('search-input');
 
-  // Loop through all h3 and p elements and highlight matching text
-  document.querySelectorAll('h3, h2, label, p').forEach((element) => {
-    const text = element.textContent.toLowerCase();
+  // Search button
+  searchButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevents the default button behavior
 
-    if (text.includes(searchTerm)) {
-      // Highlight the matching text
-      const newText = text.replace(
-        searchTerm,
-        `<span class="search-highlight">${searchTerm}</span>`,
-      );
-      element.innerHTML = newText;
-    }
+    // Get the search term and convert it to lowercase
+    const searchTerm = searchInput.value.toLowerCase();
+
+    // Remove previous highlights
+    const highlightedElements = document.querySelectorAll('.search-highlight');
+    highlightedElements.forEach((element) => {
+      element.classList.remove('search-highlight');
+    });
+
+    // Loop through elements and highlight the matching text
+    document.querySelectorAll('h3, h2, label, p, li').forEach((element) => {
+      const text = element.textContent.toLowerCase();
+
+      if (text.includes(searchTerm)) {
+        // Highlight the matching text
+        const newText = text.replace(
+          new RegExp(searchTerm, 'gi'),
+          (match) => `<span class="search-highlight">${match}</span>`,
+        );
+        element.innerHTML = newText;
+      }
+    });
   });
 });
 
